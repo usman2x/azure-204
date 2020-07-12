@@ -45,3 +45,29 @@ There are different services that azure provide for better security.
 1. Azure security
 2. RBAC
 3. Azure AD
+
+#### Azure AD
+> Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources.
+There are following types of indentities available in Azure AD.
+- User Identity + Roles => User Principal
+- Service Identity + Roles => Service Principal
+- Managed Identity
+
+### RBAC
+> Role-based access control (RBAC) is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure.
+
+You control access to resources using RBAC by creating role assignments, which control how permissions are enforced. To create a role assignment, you need three elements: a security principal, a role definition, and a scope. You can think of these elements as "who", "what", and "where".
+
+1. Security principal (who)
+2. Role definition (what you can do)
+3. Scope (where)
+
+Azure provides four level of resource management. 
+1. Management Group
+2. Subscription
+3. Resource Groups
+4. Resources
+
+All resources within parent scope automatically inherit the conditions applied to the parent group. 
+
+![Role Assignment](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/media/2-rbac-overview.png)
