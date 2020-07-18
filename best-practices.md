@@ -7,5 +7,5 @@
 5. Use pricing calculator before provisioning resources
 6. Create Action group to delete all azure resources when you have consumed 100% budget
 7. Use cost management and billing tool for cost analysis
-8. Creating azure resure use basic package with limited functionalities
-9. Use regions with less cost
+8. Creating azure resources with basic package having limited functionalities
+9. Use lower cost regions
