@@ -57,6 +57,7 @@ In order to create VM you have to create VNet first so that we can assign sub ne
 of VM creation.
 #### 2. Calculate VM pricing by Azure pricing calculator
 #### 3. Select Ubuntu Server 18.04 LTS
+#### 3.1 Select size of VM
 #### 4. For Availability options, choose No infrastructure redundancy required.
 #### 5. Select Password base authentication
 #### 6. Using SSH connect the the VM
