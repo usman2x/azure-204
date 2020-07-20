@@ -9,3 +9,9 @@
 7. Use cost management and billing tool for cost analysis
 8. Creating azure resources with basic package having limited functionalities
 9. Use lower cost regions
+
+### Challenges
+
+1. Organize Resources
+2. Enforce Standards
+3. Protect critical Azure resources 
