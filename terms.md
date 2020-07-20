@@ -11,3 +11,4 @@
 - Subscription
 - Resource groups
 - Resource
+- SKU
