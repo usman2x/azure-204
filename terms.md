@@ -7,3 +7,7 @@
 - Public Cloud
 - Private Cloud
 - Hybrid Cloud
+3. Azure Terms
+- Subscription
+- Resource groups
+- Resource
