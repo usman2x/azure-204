@@ -41,3 +41,22 @@ Azure reserves the first four addresses and the last address in each subnet for 
 Filter Inbound and Outbound traffice, Can apply rules on traffice. Assign public IP to connect outside the network.
 
 ### Remote Desktop Connection Manager
+
+
+### Resource Provisioning Steps
+There are different options available to provision the resources. 
+1. Azure CLI
+2. PowerShell
+3. REST API
+4. Portal
+These are the options that we can use to request Azure Resource manager(ARM) to create the resources. Azure Resource manager(ARM) takes care of resource provisioning.
+We can also levereg another technique provided by ARM to build an ARM template for fast provisioning and deployment of resources. ARM template is a json file.
+
+#### 1. Create VNet and Assign Subnet
+In order to create VM you have to create VNet first so that we can assign sub net to our VM. If there is no VNet available in advance, Azure creates for you at time
+of VM creation.
+#### 2. Calculate VM pricing by Azure pricing calculator
+#### 3. Select Ubuntu Server 18.04 LTS
+#### 4. For Availability options, choose No infrastructure redundancy required.
+#### 5. Select Password base authentication
+#### 6. Using SSH connect the the VM
