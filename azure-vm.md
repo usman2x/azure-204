@@ -61,3 +61,7 @@ of VM creation.
 #### 4. For Availability options, choose No infrastructure redundancy required.
 #### 5. Select Password base authentication
 #### 6. Using SSH connect the the VM
+
+### Communication
+A VM can communicate with public internet using public IP address or a public load balancer. For VM management, you can connect via the Azure CLI, Remote Desktop Protocol (RDP), or Secure Shell (SSH).
+
