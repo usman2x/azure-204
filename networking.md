@@ -14,8 +14,9 @@
 
 Azure Virtual Network (VNet) is the fundamental building block for your private network in Azure.
 ##### VNet Concepts
-- **Address Space**
+- **Address Space:** Defined using CIDR notation, The address space should be unique within subscription.
 - **Subnets:** Subnets enable you to segment the virtual network into one or more sub-networks and allocate a portion of the virtual network's address space to each subnet
+- **Peering:** Connect multiple Vnets together
 
 
 
