@@ -37,3 +37,19 @@ Azure Service
 2) Azure Service Bus
 3) Azure Event Grid
 4) Azure Event Hub
+
+In General there are two types of asynchronous communication.
+
+1. Message base communication
+2. Event base communication
+
+#### Decide between messages and events
+
+- Messages: In the terminology of distributed applications, the defining characteristic of a message is that the overall integrity of the application may rely on messages being received. 
+  - The sender and receiver of a message are often coupled by a strict data contract.
+  - 1-1
+  - 1-N (Filters, Subscribers)
+- Events: An event triggers a notification that something has occurred. Events are "lighter" than messages and are most often used for broadcast communications.
+  - 1-N (Optional)
+  - The event may be sent to multiple receivers, or to none at all
+  - The publisher of the event has no expectation about the action a receiving component takes
