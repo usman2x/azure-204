@@ -10,11 +10,19 @@ Some common messaging scenarios are:
 - Topics and subscriptions. Enable 1:n relationships between publishers and subscribers.
 - Message sessions. Implement workflows that require message ordering or message deferral.
 
-Components
+#### Components
 - Queues
 	- Single Sender and Single receiver
 - Topics
 	- Single sender and multiple receivers
+
+#### Azure service bus in action
+- Service bus Namespace: A namespace is a container, with a unique fully qualified domain name, for queues, topics, and relays. You must start by creating the namespace.
+	- Each namespace has primary and secondary shared access signature encryption keys
+	- Service Bus Queue
+	- Service Bus topics and subscriptions
+- Use shared access signatures in message publisher and subscriber to connect to service bus queue.
+
 
 ### Service Bus Explorer
 https://github.com/paolosalvatori/ServiceBusExplorer
