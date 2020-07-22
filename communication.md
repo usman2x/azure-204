@@ -53,3 +53,9 @@ In General there are two types of asynchronous communication.
   - 1-N (Optional)
   - The event may be sent to multiple receivers, or to none at all
   - The publisher of the event has no expectation about the action a receiving component takes
+  
+### Message Delivery Options
+- At-least-one-delivery 
+- At-most-one-delilvery
+- First-in-First-out
+- Transactionla support
