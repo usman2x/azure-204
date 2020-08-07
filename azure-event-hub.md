@@ -32,3 +32,19 @@ There are three pricing tiers for Azure Event Hubs: Basic, Standard, and Dedicat
 - Partition:Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition.
 - Partition count:  The number of partitions required in an Event Hub (between 2 and 32). The partition count should be directly related to the expected number of concurrent consumers and can't be changed after the hub has been created.
 - Message Retention
+#### Best practices
+- Partitions are ordered sequence of events, 
+- Event hub provides partitioned consumer pattern that enables consumer to 
+read subset or partition of message stream.
+- This pattern enables horizontal scale for event processing
+- Partitions can only be specified at the time of namespace creation.
+
+> Dynamic additions of partitions is available only on Dedicated Event Hubs clusters.
+> If you use partition key with your producer applications and depend on key hashing to ensure ordering in a partition, dynamically adding partitions isn't recommended.
+
+> We recommend that you balance 1:1 throughput units and partitions to achieve optimal scale. A single partition has a guaranteed ingress and egress of up to one throughput unit. While you may be able to achieve higher throughput on a partition, performance is not guaranteed. This is why we strongly recommend that the number of partitions in an event hub be greater than or equal to the number of throughput units.
+
+- Partitions assignment
+	- Direct to partition
+	- Partition key
+	- Round robin
