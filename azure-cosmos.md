@@ -37,3 +37,9 @@ Request Unit considerations
   - Projections
 
 -Script usage: As with queries, stored procedures and triggers consume RUs based on the complexity of their operations. As you develop your application, inspect the request charge header to better understand how much RU capacity each operation consumes.
+
+> At the lowest level, Azure Cosmos DB stores data in atom-record-sequence (ARS) format. The data is then abstracted and projected as an API
+> Azure Cosmos DB offering you five different consistency levels: strong, bounded staleness, session, consistent prefix, and eventual.
+
+### Cosmos DB partition
+Data stored in collections are distributed across partitions based on partition key. A partition key is property of a document. The Azure Cosmos DB throughput you've configured is divided evenly among partitions. A partition key design that doesn't evenly distribute throughput requests can create hot partitions
