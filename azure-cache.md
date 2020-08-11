@@ -1,6 +1,17 @@
 ### Azure Cache for Redis
-> Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. 
+> Redis(REmote DIctionary Server) is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. 
 Azure Cache for Redis can be used as a distributed data or content cache, a session store, a message broker, and more. It can be deployed as a standalone or along side with other Azure database service, such as Azure SQL or Cosmos DB.
+
+Data in Redis is stored in nodes and clusters.
+
+- Nodes are a space in Redis where your data is stored.
+- Clusters are sets of three or more nodes your dataset is split across. Clusters are useful because your operations will continue if a node fails or is unable to communicate to the rest of the cluster.
+
+Redis caching architecture is how we distribute our data in the cache. Redis distributes data in three major ways:
+
+- Single node
+- Multiple node
+- Clustered
 
 ### Features
 - Transactions: Transactions in Redis work by queueing multiple commands to be executed as a group
@@ -30,4 +41,7 @@ Azure Cache for Redis can be used as a distributed data or content cache, a sess
 
 #### Concepts
 > Redis does not support transaction rollbacks.
+> The length of a Redis key impacts the performance of lookup time
+> Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues.
+
 
