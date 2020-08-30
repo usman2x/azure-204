@@ -18,6 +18,11 @@ For developers, API Management provides a range of benefits.
  - Analytics
  - Security
 
+### APIM roles
+- Administrator
+- Developer
+- Guest
+
 #### Pricing 
 A scale unit enables you to scale up a service. The more scale units you have, the more you can scale up the service.
 
