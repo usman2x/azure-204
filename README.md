@@ -7,6 +7,12 @@
     - Azure Logic Apps
     - WebJobs
     - Microsoft power automate
+  - IAAS
+    - VMs
+    - Azure container registry (ACR)
+    - Azure container instance (ACI)
+  - PAAS
+    - Azure App Service
 - Develop Azure Storage
 - Implement Azure Security
 - Azure Integration services
