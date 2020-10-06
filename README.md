@@ -14,6 +14,9 @@
   - PAAS
     - Azure App Service
 - Develop Azure Storage
+  - Azure Cosmos DB
+  - Azure Storage
+    - Azure Blob Storage
 - Implement Azure Security
 - Azure Integration services
 - Azure monitoring, troubleshooting, Otimize solutions
